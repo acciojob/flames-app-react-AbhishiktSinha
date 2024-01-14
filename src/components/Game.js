@@ -81,14 +81,14 @@ const Game = ()=> {
         <div className="game-container">
 
             <form id='game-form' onSubmit={submitHandler} onReset={resetHandler}>
-                <input type="text" id="name1" name='name1' placeholder='Enter first name'/>
-                <input type="text" id="name2" name='name2' placeholder='Enter second name'/>
-                <button type="submit">Calculate Relationship Future</button>
-                <button type="reset">Clear</button>
+                <input type="text" id="input1" name='name1' placeholder='Enter first name' data-test-id="input1"/>
+                <input type="text" id="input2" name='name2' placeholder='Enter second name'/>
+                <button id="calculate_relationship" type="submit">Calculate Relationship Future</button>
+                <button id="clear" type="reset">Clear</button>
             </form>
 
             <div className="result-display-section">
-                <h1 id="result">{result}</h1>
+                <h3 id="result">{result}</h3>
             </div>
         </div>
     )
