@@ -82,13 +82,13 @@ const Game = ()=> {
 
             <form id='game-form' onSubmit={submitHandler} onReset={resetHandler}>
                 <input type="text" id="input1" name='name1' placeholder='Enter first name' data-test-id="input1"/>
-                <input type="text" id="input2" name='name2' placeholder='Enter second name'/>
-                <button id="calculate_relationship" type="submit">Calculate Relationship Future</button>
-                <button id="clear" type="reset">Clear</button>
+                <input type="text" id="input2" name='name2' placeholder='Enter second name' data-test-id="input2"/>
+                <button id="calculate_relationship" type="submit" data-test-id="calculate_relationship">Calculate Relationship Future</button>
+                <button id="clear" type="reset" data-test-id="clear">Clear</button>
             </form>
 
             <div className="result-display-section">
-                <h3 id="result">{result}</h3>
+                <h3 data-test-id="answer">{result}</h3>
             </div>
         </div>
     )
